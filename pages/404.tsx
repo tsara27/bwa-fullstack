@@ -1,4 +1,4 @@
-function 404() {
+function Custom404() {
   return (
     <>
       {/* Not found page (404) */}
@@ -9,7 +9,7 @@ function 404() {
               className="img-fluid"
               width="483"
               height="300"
-              viewbox="0 0 483 300"
+              viewBox="0 0 483 300"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -236,35 +236,35 @@ function 404() {
                 />
               </g>
               <defs>
-                <lineargradient
+                <linearGradient
                   id="paint0_linear"
                   x1="0"
                   y1="177.412"
                   x2="13.1704"
                   y2="177.412"
-                  gradientunits="userspaceonuse"
+                  gradientUnits="userspaceonuse"
                 >
                   <stop stop-color="#83a6ff" />
                   <stop offset="1" stop-color="#5a78ff" />
-                </lineargradient>
-                <lineargradient
+                </linearGradient>
+                <linearGradient
                   id="paint1_linear"
                   x1="468.289"
                   y1="25.0788"
                   x2="480.658"
                   y2="25.0788"
-                  gradientunits="userspaceonuse"
+                  gradientUnits="userspaceonuse"
                 >
                   <stop stop-color="#83a6ff" />
                   <stop offset="1" stop-color="#5a78ff" />
-                </lineargradient>
-                <lineargradient
+                </linearGradient>
+                <linearGradient
                   id="paint2_linear"
                   x1="407.293"
                   y1="252.456"
                   x2="377.296"
                   y2="258.937"
-                  gradientunits="userspaceonuse"
+                  gradientUnits="userspaceonuse"
                 >
                   <stop
                     offset="0.00289017"
@@ -272,14 +272,14 @@ function 404() {
                     stop-opacity="0"
                   />
                   <stop offset="1" stop-color="#373c47" />
-                </lineargradient>
-                <lineargradient
+                </linearGradient>
+                <linearGradient
                   id="paint3_linear"
                   x1="232.522"
                   y1="221.979"
                   x2="232.522"
                   y2="48.4336"
-                  gradientunits="userspaceonuse"
+                  gradientUnits="userspaceonuse"
                 >
                   <stop
                     offset="0.00289017"
@@ -287,25 +287,25 @@ function 404() {
                     stop-opacity="0"
                   />
                   <stop offset="1" stop-color="#373c47" />
-                </lineargradient>
-                <lineargradient
+                </linearGradient>
+                <linearGradient
                   id="paint4_linear"
                   x1="29.1692"
                   y1="78.748"
                   x2="422.924"
                   y2="78.748"
-                  gradientunits="userspaceonuse"
+                  gradientUnits="userspaceonuse"
                 >
                   <stop stop-color="#ff66a9" />
                   <stop offset="1" stop-color="#f53689" />
-                </lineargradient>
-                <lineargradient
+                </linearGradient>
+                <linearGradient
                   id="paint5_linear"
                   x1="437.527"
                   y1="144.362"
                   x2="459.972"
                   y2="169.644"
-                  gradientunits="userspaceonuse"
+                  gradientUnits="userspaceonuse"
                 >
                   <stop
                     offset="0.00289017"
@@ -313,14 +313,14 @@ function 404() {
                     stop-opacity="0"
                   />
                   <stop offset="1" stop-color="#373c47" />
-                </lineargradient>
-                <lineargradient
+                </linearGradient>
+                <linearGradient
                   id="paint6_linear"
                   x1="30.7966"
                   y1="144.362"
                   x2="53.238"
                   y2="169.644"
-                  gradientunits="userspaceonuse"
+                  gradientUnits="userspaceonuse"
                 >
                   <stop
                     offset="0.00289017"
@@ -328,14 +328,14 @@ function 404() {
                     stop-opacity="0"
                   />
                   <stop offset="1" stop-color="#373c47" />
-                </lineargradient>
-                <lineargradient
+                </linearGradient>
+                <linearGradient
                   id="paint7_linear"
                   x1="226.322"
                   y1="71.8503"
                   x2="226.322"
                   y2="47.7445"
-                  gradientunits="userspaceonuse"
+                  gradientUnits="userspaceonuse"
                 >
                   <stop
                     offset="0.00289017"
@@ -343,10 +343,10 @@ function 404() {
                     stop-opacity="0"
                   />
                   <stop offset="1" stop-color="#283247" />
-                </lineargradient>
-                <clippath id="clip0">
+                </linearGradient>
+                <clipPath id="clip0">
                   <rect width="482.759" height="300" fill="white" />
-                </clippath>
+                </clipPath>
               </defs>
             </svg>
           </div>
@@ -373,4 +373,4 @@ function 404() {
   )
 }
 
-export default 404;
+export default Custom404;
