@@ -1,11 +1,10 @@
-import type { NextPage } from 'next';
 import { useEffect } from 'react';
 import AOS from 'aos';
 
-const Home: NextPage = () => {
+function Home() {
   useEffect(() => {
-    AOS.init()
-  }, [])
+    AOS.init();
+  }, []);
 
   return (
     <>
@@ -14,7 +13,7 @@ const Home: NextPage = () => {
           className="navbar navbar-expand-lg navbar-light bg-light bg-white pt-lg-40 pb-lg-40 pt-30 pb-50"
         >
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/#">
               <svg
                 width="60"
                 height="60"
@@ -55,32 +54,35 @@ const Home: NextPage = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon" />
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
                 <li className="nav-item my-auto">
-                  <a className="nav-link active" aria-current="page" href="#">Home</a>
+                  <a className="nav-link active" aria-current="page" href="/#">Home</a>
                 </li>
                 <li className="nav-item my-auto">
-                  <a className="nav-link" href="#">Games</a>
+                  <a className="nav-link" href="/#">Games</a>
                 </li>
                 <li className="nav-item my-auto">
-                  <a className="nav-link" href="#">Rewards</a>
+                  <a className="nav-link" href="/#">Rewards</a>
                 </li>
 
                 <li className="nav-item my-auto">
-                  <a className="nav-link" href="#">Discover</a>
+                  <a className="nav-link" href="/#">Discover</a>
                 </li>
                 <li className="nav-item my-auto me-lg-20">
-                  <a className="nav-link" href="#">Global Rank</a>
+                  <a className="nav-link" href="/#">Global Rank</a>
                 </li>
                 <li className="nav-item my-auto">
                   <a
                     className="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill"
                     href="./src/sign-in.html"
                     role="button"
-                    >Sign In</a
+                  >
+                    Sign In
+
+                  </a
                   >
                 </li>
               </ul>
@@ -95,14 +97,26 @@ const Home: NextPage = () => {
             <div className="col-lg-6 col-12 my-auto">
               <p className="text-support text-lg color-palette-2">Halo gamers,</p>
               <h1 className="header-title color-palette-1 fw-bold">
-                Topup & Get <span className="d-sm-inline d-none">a</span
-                ><span className="d-sm-none d-inline">a </span
-                ><span className="underline-blue"> New</span>
+                Topup & Get
+                {' '}
+                <span className="d-sm-inline d-none">
+                  a
+                </span
+                >
+                <span className="d-sm-none d-inline">
+                  a
+                  {' '}
+                </span
+                >
+                <span className="underline-blue"> New</span>
                 <br className="d-sm-block d-none" />
-                <span className="underline-blue">Experience</span> in Gaming
+                <span className="underline-blue">Experience</span>
+                {' '}
+                in Gaming
               </h1>
               <p className="mt-30 mb-40 text-lg color-palette-1">
-                Kami menyediakan jutaan cara untuk membantu<br
+                Kami menyediakan jutaan cara untuk membantu
+                <br
                   className="d-md-block d-none"
                 />
                 players menjadi pemenang sejati
@@ -112,13 +126,19 @@ const Home: NextPage = () => {
                   className="btn btn-get text-lg text-white rounded-pill"
                   href="#feature"
                   role="button"
-                  >Get Started</a
+                >
+                  Get Started
+
+                </a
                 >
                 <a
                   className="btn-learn text-lg color-palette-1 my-auto text-center"
-                  href="#"
+                  href="/#"
                   role="button"
-                  >Learn More</a
+                >
+                  Learn More
+
+                </a
                 >
               </div>
             </div>
@@ -245,7 +265,8 @@ const Home: NextPage = () => {
       <section id="feature" className="feature pt-50 pb-50">
         <div className="container-fluid">
           <h2 className="text-4xl fw-bold color-palette-1 text-center mb-30">
-            It’s Really That<br />
+            It’s Really That
+            <br />
             Easy to Win the Game
           </h2>
           <div className="row gap-lg-0 gap-4" data-aos="fade-up">
@@ -294,16 +315,16 @@ const Home: NextPage = () => {
                       <path
                         d="M37 55H-4"
                         stroke="white"
-                        stroke-width="4"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                       <path
                         d="M23 64L-4 64"
                         stroke="#B7B0F4"
-                        stroke-width="4"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                       <rect
                         x="23"
@@ -327,13 +348,14 @@ const Home: NextPage = () => {
                       cy="29.5"
                       r="5.5"
                       stroke="white"
-                      stroke-width="4"
+                      strokeWidth="4"
                     />
                   </g>
                 </svg>
                 <p className="fw-semibold text-2xl mb-2 color-palette-1">1. Start</p>
                 <p className="text-lg color-palette-1 mb-0">
-                  Pilih salah satu game<br />
+                  Pilih salah satu game
+                  <br />
                   yang ingin kamu top up
                 </p>
               </div>
@@ -372,16 +394,16 @@ const Home: NextPage = () => {
                     <path
                       d="M32 36H5"
                       stroke="white"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M27 45L9 45"
                       stroke="#B7B0F4"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <rect
                       x="56"
@@ -394,16 +416,16 @@ const Home: NextPage = () => {
                     <path
                       d="M97 50H70"
                       stroke="white"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M92 59L74 59"
                       stroke="#6B63AC"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </g>
                 </svg>
@@ -411,7 +433,8 @@ const Home: NextPage = () => {
                   2. Fill Up
                 </p>
                 <p className="text-lg color-palette-1 mb-0">
-                  Top up sesuai dengan<br />
+                  Top up sesuai dengan
+                  <br />
                   nominal yang sudah tersedia
                 </p>
               </div>
@@ -450,23 +473,23 @@ const Home: NextPage = () => {
                     <path
                       d="M50 46L50 68"
                       stroke="white"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M40 54L40 68"
                       stroke="#B7B0F4"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M30 60L30 68"
                       stroke="#B7B0F4"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <circle cx="40" cy="26" r="14" fill="#2B2467" />
                     <path
@@ -479,7 +502,8 @@ const Home: NextPage = () => {
                   3. Be a Winner
                 </p>
                 <p className="text-lg color-palette-1 mb-0">
-                  Siap digunakan untuk<br />
+                  Siap digunakan untuk
+                  <br />
                   improve permainan kamu
                 </p>
               </div>
@@ -491,7 +515,8 @@ const Home: NextPage = () => {
       <section className="featured-game pt-50 pb-50">
         <div className="container-fluid">
           <h2 className="text-4xl fw-bold color-palette-1 mb-30">
-            Our Featured<br />
+            Our Featured
+            <br />
             Games This Year
           </h2>
           <div
@@ -705,10 +730,10 @@ const Home: NextPage = () => {
                 Players Top Up
               </p>
             </div>
-            <div className="vertical-line me-lg-35 ms-lg-35 d-lg-block d-none"></div>
+            <div className="vertical-line me-lg-35 ms-lg-35 d-lg-block d-none" />
             <div
               className="horizontal-line mt-6 mb-6 me-lg-35 ms-lg-35 d-lg-none d-block"
-            ></div>
+            />
             <div className="me-lg-35 ms-lg-35">
               <p
                 className="text-4xl text-lg-start text-center color-palette-1 fw-bold m-0"
@@ -721,8 +746,8 @@ const Home: NextPage = () => {
             </div>
             <div
               className="horizontal-line mt-6 mb-6 me-lg-35 ms-lg-35 d-lg-none d-block"
-            ></div>
-            <div className="vertical-line me-lg-35 ms-lg-35 d-lg-block d-none"></div>
+            />
+            <div className="vertical-line me-lg-35 ms-lg-35 d-lg-block d-none" />
             <div className="me-lg-35 ms-lg-35">
               <p
                 className="text-4xl text-lg-start text-center color-palette-1 fw-bold m-0"
@@ -735,8 +760,8 @@ const Home: NextPage = () => {
             </div>
             <div
               className="horizontal-line mt-6 mb-6 me-lg-35 ms-lg-35 d-lg-none d-block"
-            ></div>
-            <div className="vertical-line me-lg-35 ms-lg-35 d-lg-block d-none"></div>
+            />
+            <div className="vertical-line me-lg-35 ms-lg-35 d-lg-block d-none" />
             <div className="me-lg-35 ms-lg-35">
               <p
                 className="text-4xl text-lg-start text-center color-palette-1 fw-bold m-0"
@@ -769,22 +794,28 @@ const Home: NextPage = () => {
             <div className="col-lg-5 col-12 ps-lg-60">
               <div className="">
                 <h2 className="text-4xl fw-bold color-palette-1 mb-30">
-                  Win the battle.<br />
+                  Win the battle.
+                  <br />
                   Be the Champion.
                 </h2>
                 <p className="text-lg color-palette-1 mb-30">
-                  Kami menyediakan jutaan cara untuk<br
+                  Kami menyediakan jutaan cara untuk
+                  <br
                     className="d-sm-block d-none"
                   />
-                  membantu players menjadi<br className="d-sm-block d-none" />
+                  membantu players menjadi
+                  <br className="d-sm-block d-none" />
                   pemenang sejati
                 </p>
                 <div className="d-md-block d-flex flex-column w-100">
                   <a
                     className="btn btn-read text-lg rounded-pill"
-                    href="#"
+                    href="/#"
                     role="button"
-                    >Read Story</a
+                  >
+                    Read Story
+
+                  </a
                   >
                 </div>
               </div>
@@ -831,7 +862,8 @@ const Home: NextPage = () => {
                   </svg>
                 </a>
                 <p className="mt-30 text-lg color-palette-1 mb-30">
-                  StoreGG membantu gamers<br />
+                  StoreGG membantu gamers
+                  <br />
                   untuk menjadi pemenang sejati
                 </p>
                 <p className="mt-30 text-lg color-palette-1 mb-30">
@@ -849,28 +881,40 @@ const Home: NextPage = () => {
                         <a
                           href=""
                           className="text-lg color-palette-1 text-decoration-none"
-                          >About Us</a
+                        >
+                          About Us
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
                           href=""
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Press Release</a
+                        >
+                          Press Release
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
                           href=""
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Terms of Use</a
+                        >
+                          Terms of Use
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
                           href=""
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Privacy & Policy</a
+                        >
+                          Privacy & Policy
+
+                        </a
                         >
                       </li>
                     </ul>
@@ -884,21 +928,30 @@ const Home: NextPage = () => {
                         <a
                           href=""
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Refund Policy</a
+                        >
+                          Refund Policy
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
                           href=""
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Unlock Rewards</a
+                        >
+                          Unlock Rewards
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
                           href=""
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Live Chatting</a
+                        >
+                          Live Chatting
+
+                        </a
                         >
                       </li>
                     </ul>
@@ -912,14 +965,20 @@ const Home: NextPage = () => {
                         <a
                           href="mailto: hi@store.gg"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >hi@store.gg</a
+                        >
+                          hi@store.gg
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
                           href="mailto: team@store.gg"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >team@store.gg</a
+                        >
+                          team@store.gg
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
@@ -927,14 +986,20 @@ const Home: NextPage = () => {
                           href="http://maps.google.com/?q=Pasific 12,
                                           Jakarta Selatan"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Pasific 12, Jakarta Selatan</a
+                        >
+                          Pasific 12, Jakarta Selatan
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
                           href="tel: 02111229090"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >021 - 1122 - 9090</a
+                        >
+                          021 - 1122 - 9090
+
+                        </a
                         >
                       </li>
                     </ul>
@@ -946,7 +1011,7 @@ const Home: NextPage = () => {
         </footer>
       </section>
     </>
-    );
-};
+  );
+}
 
 export default Home;
