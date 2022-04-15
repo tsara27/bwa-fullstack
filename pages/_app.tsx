@@ -4,6 +4,7 @@ import '../styles/details.css'
 import '../styles/checkout.css'
 import '../styles/complete_checkout.css'
 import '../styles/sign_in.css'
+import '../styles/sign_up.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 
