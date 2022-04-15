@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Details () {
+function Details(): JSX.Element {
   return (
     <div>
       {/* Navigation */}
@@ -9,7 +9,7 @@ function Details () {
           className="navbar navbar-expand-lg navbar-light bg-light bg-white pt-lg-40 pb-lg-40 pt-30 pb-50"
         >
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/#">
               <svg
                 width="60"
                 height="60"
@@ -50,32 +50,35 @@ function Details () {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon" />
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
                 <li className="nav-item my-auto">
-                  <a className="nav-link active" aria-current="page" href="#">Home</a>
+                  <a className="nav-link active" aria-current="page" href="/#">Home</a>
                 </li>
                 <li className="nav-item my-auto">
-                  <a className="nav-link" href="#">Games</a>
+                  <a className="nav-link" href="/#">Games</a>
                 </li>
                 <li className="nav-item my-auto">
-                  <a className="nav-link" href="#">Rewards</a>
+                  <a className="nav-link" href="/#">Rewards</a>
                 </li>
 
                 <li className="nav-item my-auto">
-                  <a className="nav-link" href="#">Discover</a>
+                  <a className="nav-link" href="/#">Discover</a>
                 </li>
                 <li className="nav-item my-auto me-lg-20">
-                  <a className="nav-link" href="#">Global Rank</a>
+                  <a className="nav-link" href="/#">Global Rank</a>
                 </li>
                 <li className="nav-item my-auto">
                   <a
                     className="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill"
                     href="./src/sign-in.html"
                     role="button"
-                    >Sign In</a
+                  >
+                    Sign In
+
+                  </a
                   >
                 </li>
               </ul>
@@ -112,7 +115,8 @@ function Details () {
                 {/* Mobile: Title */}
                 <div className="col-md-12 col-8 d-md-none d-block">
                   <h2 className="text-xl fw-bold color-palette-1 text-start mb-10">
-                    Mobile Legends:<br />
+                    Mobile Legends:
+                    <br />
                     The New Battle 2021
                   </h2>
                   <p className="text-sm color-palette-2 text-start mb-0">
@@ -127,7 +131,8 @@ function Details () {
                 <h2
                   className="text-4xl fw-bold color-palette-1 text-start mb-10 mt-10"
                 >
-                  Mobile Legends:<br />
+                  Mobile Legends:
+                  <br />
                   The New Battle 2021
                 </h2>
                 <p className="text-lg color-palette-2 mb-0">Category: Mobile</p>
@@ -139,7 +144,10 @@ function Details () {
                     <label
                       htmlFor="ID"
                       className="form-label text-lg fw-medium color-palette-1 mb-10"
-                      >Verify ID</label
+                    >
+                      Verify ID
+
+                    </label
                     >
                     <input
                       type="text"
@@ -185,9 +193,9 @@ function Details () {
                             <path
                               d="M5.83301 10L8.46459 12.5L14.1663 7.5"
                               stroke="#00BAFF"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             />
                           </svg>
                         </div>
@@ -223,9 +231,9 @@ function Details () {
                             <path
                               d="M5.83301 10L8.46459 12.5L14.1663 7.5"
                               stroke="#00BAFF"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             />
                           </svg>
                         </div>
@@ -261,9 +269,9 @@ function Details () {
                             <path
                               d="M5.83301 10L8.46459 12.5L14.1663 7.5"
                               stroke="#00BAFF"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             />
                           </svg>
                         </div>
@@ -299,9 +307,9 @@ function Details () {
                             <path
                               d="M5.83301 10L8.46459 12.5L14.1663 7.5"
                               stroke="#00BAFF"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             />
                           </svg>
                         </div>
@@ -337,9 +345,9 @@ function Details () {
                             <path
                               d="M5.83301 10L8.46459 12.5L14.1663 7.5"
                               stroke="#00BAFF"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             />
                           </svg>
                         </div>
@@ -385,9 +393,9 @@ function Details () {
                               <path
                                 d="M5.83301 10L8.46459 12.5L14.1663 7.5"
                                 stroke="#00BAFF"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                               />
                             </svg>
                           </div>
@@ -424,9 +432,9 @@ function Details () {
                               <path
                                 d="M5.83301 10L8.46459 12.5L14.1663 7.5"
                                 stroke="#00BAFF"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                               />
                             </svg>
                           </div>
@@ -443,7 +451,10 @@ function Details () {
                   <label
                     htmlFor="bankAccount"
                     className="form-label text-lg fw-medium color-palette-1 mb-10"
-                    >Bank Account Name</label>
+                  >
+                    Bank Account Name
+
+                  </label>
                   <input
                     type="text"
                     className="form-control rounded-pill text-lg"
@@ -458,7 +469,10 @@ function Details () {
                     href="./checkout.html"
                     type="submit"
                     className="btn btn-submit rounded-pill fw-medium text-white border-0 text-lg"
-                    >Continue</a>
+                  >
+                    Continue
+
+                  </a>
                 </div>
               </form>
             </div>
@@ -472,7 +486,7 @@ function Details () {
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-4 text-lg-start text-center">
-                <a href="" className="mb-30">
+                <a href="/" className="mb-30">
                   <svg
                     width="60"
                     height="60"
@@ -505,7 +519,8 @@ function Details () {
                   </svg>
                 </a>
                 <p className="mt-30 text-lg color-palette-1 mb-30">
-                  StoreGG membantu gamers<br />
+                  StoreGG membantu gamers
+                  <br />
                   untuk menjadi pemenang sejati
                 </p>
                 <p className="mt-30 text-lg color-palette-1 mb-30">
@@ -521,30 +536,42 @@ function Details () {
                     <ul className="list-unstyled">
                       <li className="mb-6">
                         <a
-                          href=""
+                          href="/"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >About Us</a
+                        >
+                          About Us
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
-                          href=""
+                          href="/"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Press Release</a
+                        >
+                          Press Release
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
-                          href=""
+                          href="/"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Terms of Use</a
+                        >
+                          Terms of Use
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
-                          href=""
+                          href="/"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Privacy & Policy</a
+                        >
+                          Privacy & Policy
+
+                        </a
                         >
                       </li>
                     </ul>
@@ -556,23 +583,32 @@ function Details () {
                     <ul className="list-unstyled">
                       <li className="mb-6">
                         <a
-                          href=""
+                          href="/"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Refund Policy</a
+                        >
+                          Refund Policy
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
-                          href=""
+                          href="/"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Unlock Rewards</a
+                        >
+                          Unlock Rewards
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
-                          href=""
+                          href="/"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Live Chatting</a
+                        >
+                          Live Chatting
+
+                        </a
                         >
                       </li>
                     </ul>
@@ -586,14 +622,20 @@ function Details () {
                         <a
                           href="mailto: hi@store.gg"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >hi@store.gg</a
+                        >
+                          hi@store.gg
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
                           href="mailto: team@store.gg"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >team@store.gg</a
+                        >
+                          team@store.gg
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
@@ -601,14 +643,20 @@ function Details () {
                           href="http://maps.google.com/?q=Pasific 12,
                                           Jakarta Selatan"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >Pasific 12, Jakarta Selatan</a
+                        >
+                          Pasific 12, Jakarta Selatan
+
+                        </a
                         >
                       </li>
                       <li className="mb-6">
                         <a
                           href="tel: 02111229090"
                           className="text-lg color-palette-1 text-decoration-none"
-                          >021 - 1122 - 9090</a>
+                        >
+                          021 - 1122 - 9090
+
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -619,7 +667,7 @@ function Details () {
         </footer>
       </section>
     </div>
-  )
+  );
 }
 
-export default Details
+export default Details;
