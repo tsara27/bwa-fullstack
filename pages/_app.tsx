@@ -6,6 +6,8 @@ import '../styles/complete_checkout.css'
 import '../styles/sign_in.css'
 import '../styles/sign_up.css'
 import '../styles/sign_up_photo.css'
+import '../styles/sign_up_success.css'
+import '../styles/404.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 
