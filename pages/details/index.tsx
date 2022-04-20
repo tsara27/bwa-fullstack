@@ -6,7 +6,7 @@ import TopUpTitle from "../../components/sections/TopUpTitle";
 
 function Details(): JSX.Element {
   return (
-    <div>
+    <>
       {/* Navigation */}
       <Navbar />
       {/* Content Details */}
@@ -35,7 +35,7 @@ function Details(): JSX.Element {
       </section>
       {/* Footer */}
       <Footer />
-    </div>
+    </>
   );
 }
 
