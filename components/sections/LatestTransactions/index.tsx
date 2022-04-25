@@ -1,3 +1,5 @@
+import TableRow from "./table_row";
+
 function LatestTransactions() {
   return (
     <div className="latest-transaction">
@@ -17,152 +19,44 @@ function LatestTransactions() {
             </tr>
           </thead>
           <tbody>
-            <tr className="align-middle">
-              <th scope="row">
-                <img
-                  className="float-start me-3 mb-lg-0 mb-3"
-                  src="/img/overview-1.png"
-                  width="80"
-                  height="60"
-                  alt=""
-                />
-                <div className="game-title-header">
-                  <p className="game-title fw-medium text-start color-palette-1 m-0">
-                    Mobile Legends: The New Battle 2021
-                  </p>
-                  <p className="text-xs fw-normal text-start color-palette-2 m-0">
-                    Desktop
-                  </p>
-                </div>
-              </th>
-              <td>
-                <p className="fw-medium color-palette-1 m-0">200 Gold</p>
-              </td>
-              <td>
-                <p className="fw-medium text-start color-palette-1 m-0">
-                  Rp 290.000
-                </p>
-              </td>
-              <td>
-                <div>
-                  <span className="float-start icon-status pending"></span>
-                  <p className="fw-medium text-start color-palette-1 m-0 position-relative">
-                    Pending
-                  </p>
-                </div>
-              </td>
-            </tr>
-            <tr className="align-middle text-center">
-              <th scope="row">
-                <img
-                  className="float-start me-3 mb-lg-0 mb-3"
-                  src="/img/overview-2.png"
-                  width="80"
-                  height="60"
-                  alt=""
-                />
-                <div className="game-title-header">
-                  <p className="game-title fw-medium text-start color-palette-1 m-0">
-                    Call of Duty:Modern
-                  </p>
-                  <p className="text-xs fw-normal text-start color-palette-2 m-0">
-                    Desktop
-                  </p>
-                </div>
-              </th>
-              <td>
-                <p className="fw-medium text-start color-palette-1 m-0">
-                  550 Gold
-                </p>
-              </td>
-              <td>
-                <p className="fw-medium text-start color-palette-1 m-0">
-                  Rp 740.000
-                </p>
-              </td>
-              <td>
-                <div>
-                  <span className="float-start icon-status success"></span>
-                  <p className="fw-medium text-start color-palette-1 m-0 position-relative">
-                    Success
-                  </p>
-                </div>
-              </td>
-            </tr>
-            <tr className="align-middle text-center">
-              <th scope="row">
-                <img
-                  className="float-start me-3 mb-lg-0 mb-3"
-                  src="/img/overview-3.png"
-                  width="80"
-                  height="60"
-                  alt=""
-                />
-                <div className="game-title-header">
-                  <p className="game-title fw-medium text-start color-palette-1 m-0">
-                    Clash of Clans
-                  </p>
-                  <p className="text-xs fw-normal text-start color-palette-2 m-0">
-                    Mobile
-                  </p>
-                </div>
-              </th>
-              <td>
-                <p className="fw-medium text-start color-palette-1 m-0">
-                  100 Gold
-                </p>
-              </td>
-              <td>
-                <p className="fw-medium text-start color-palette-1 m-0">
-                  Rp 120.000
-                </p>
-              </td>
-              <td>
-                <div>
-                  <span className="float-start icon-status failed"></span>
-                  <p className="fw-medium text-start color-palette-1 m-0 position-relative">
-                    Failed
-                  </p>
-                </div>
-              </td>
-            </tr>
-            <tr className="align-middle text-center">
-              <th scope="row">
-                <img
-                  className="float-start me-3 mb-lg-0 mb-3"
-                  src="/img/overview-4.png"
-                  width="80"
-                  height="60"
-                  alt=""
-                />
-                <div className="game-title-header">
-                  <p className="game-title fw-medium text-start color-palette-1 m-0">
-                    The Royal Game
-                  </p>
-                  <p className="text-xs fw-normal text-start color-palette-2 m-0">
-                    Mobile
-                  </p>
-                </div>
-              </th>
-              <td>
-                <p className="fw-medium text-start color-palette-1 m-0">
-                  225 Gold
-                </p>
-              </td>
-              <td>
-                <p className="fw-medium text-start color-palette-1 m-0">
-                  Rp 200.000
-                </p>
-              </td>
-              <td>
-                <div>
-                  <span className="float-start icon-status pending"></span>
-                  <p className="fw-medium text-start color-palette-1 m-0 position-relative">
-                    Pending
-                  </p>
-                </div>
-              </td>
-            </tr>
+            <TableRow
+              deviceType="Desktop"
+              image="overview-1.png"
+              item="200 Gold"
+              price="Rp 200.000"
+              status="pending"
+              title="Mobile Legends: The New Battle 2021"
+            />
+
+            <TableRow
+              deviceType="Desktop"
+              image="overview-2.png"
+              item="550 Gold"
+              price="Rp 740.000"
+              status="success"
+              title="Call of Duty: Modern"
+              textCenter
+            />
+
+            <TableRow
+              deviceType="Mobile"
+              image="overview-3.png"
+              item="100 Gold"
+              price="Rp 120.000"
+              status="failed"
+              title="Clash of Clans"
+              textCenter
+            />
+
+            <TableRow
+              deviceType="Mobile"
+              image="overview-4.png"
+              item="225 Gold"
+              price="Rp 200.000"
+              status="pending"
+              title="The Royal Game"
+              textCenter
+            />
           </tbody>
         </table>
       </div>
