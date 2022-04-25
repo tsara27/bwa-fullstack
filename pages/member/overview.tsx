@@ -6,7 +6,7 @@ function Overview() {
     <>
       {/* Overview */}
       <section className="overview overflow-auto">
-        <Sidebar />
+        <Sidebar activeMenu="overview" />
         <OverviewContent />
       </section>
     </>

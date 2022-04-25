@@ -1,18 +1,24 @@
 import Profile from "./profile";
 import SidebarItem from "../../complex/SidebarItem";
 
-function Sidebar() {
+interface SidebarProps {
+  activeMenu: 'transactions' | 'overview' | 'settings';
+}
+
+function Sidebar(props: SidebarProps) {
+  const { activeMenu } = props;
+
   return (
     <section className="sidebar">
       <div className="content pt-50 pb-30 ps-30">
         <Profile />
         <div className="menus">
-          <SidebarItem title="Overview" icon="overview.svg" link="/member/overview" active />
-          <SidebarItem title="Transactions" icon="transaction.svg" />
+          <SidebarItem title="Overview" icon="overview.svg" active={activeMenu === 'overview'} link="/member/overview" />
+          <SidebarItem title="Transactions" icon="transaction.svg" active={activeMenu === 'transactions'} link="/member/transactions" />
           <SidebarItem title="Messages" icon="messages.svg" />
           <SidebarItem title="Card" icon="card.svg" />
           <SidebarItem title="Rewards" icon="rewards.svg" />
-          <SidebarItem title="Settings" icon="settings.svg" />
+          <SidebarItem title="Settings" icon="settings.svg" active={activeMenu === 'settings'} link="/member/profile/edit" />
           <SidebarItem title="Logout" icon="logout.svg" />
         </div>
         <div className="sidebar-footer pt-73 pe-30">
