@@ -35,7 +35,6 @@ function LatestTransactions() {
               price="Rp 740.000"
               status="success"
               title="Call of Duty: Modern"
-              textCenter
             />
 
             <TableRow
@@ -45,7 +44,6 @@ function LatestTransactions() {
               price="Rp 120.000"
               status="failed"
               title="Clash of Clans"
-              textCenter
             />
 
             <TableRow
@@ -55,7 +53,6 @@ function LatestTransactions() {
               price="Rp 200.000"
               status="pending"
               title="The Royal Game"
-              textCenter
             />
           </tbody>
         </table>
