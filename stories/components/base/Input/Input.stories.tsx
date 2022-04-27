@@ -9,5 +9,6 @@ export default {
 export const Default: ComponentStory<typeof Input> = (args: InputProps) => <Input {...args} />
 
 Default.args = {
-  label: "Full name"
+  label: "Full name",
+  labelText: "Input Label"
 }
