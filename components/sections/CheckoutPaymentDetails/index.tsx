@@ -1,4 +1,4 @@
-import TransactionDetailsRow from "../../complex/TransactionDetailsRow";
+import DetailsRow from "../../complex/DetailsRow";
 
 function CheckoutPaymentDetails() {
   return (
@@ -6,17 +6,17 @@ function CheckoutPaymentDetails() {
       <h2 className="fw-bold text-xl color-palette-1 mb-20">
         Payment Informations
       </h2>
-      <TransactionDetailsRow
+      <DetailsRow
         title="Your Account Name"
         content="Masayoshi Angga Zero"
       />
-      <TransactionDetailsRow title="Type" content="Worldwide Transfer" />
-      <TransactionDetailsRow title="Bank Name" content="Mandiri" />
-      <TransactionDetailsRow
+      <DetailsRow title="Type" content="Worldwide Transfer" />
+      <DetailsRow title="Bank Name" content="Mandiri" />
+      <DetailsRow
         title="Bank Account Name"
         content="PT Store GG Indonesia"
       />
-      <TransactionDetailsRow title="Bank Number" content="1800 - 9090 - 2021" />
+      <DetailsRow title="Bank Number" content="1800 - 9090 - 2021" />
     </div>
   );
 }

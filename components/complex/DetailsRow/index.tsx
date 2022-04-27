@@ -1,9 +1,9 @@
-interface TransactionDetailsRowProps {
+interface DetailsRowProps {
   title: string;
   content: string;
 }
 
-function TransactionDetailsRow(props: TransactionDetailsRowProps) {
+function DetailsRow(props: DetailsRowProps) {
   const { title, content } = props;
 
   return (
@@ -14,4 +14,4 @@ function TransactionDetailsRow(props: TransactionDetailsRowProps) {
   )
 }
 
-export default TransactionDetailsRow;
+export default DetailsRow;
