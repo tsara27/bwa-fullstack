@@ -14,6 +14,14 @@ import '../styles/sign_up_success.css'
 import '../styles/transactions.css'
 import '../styles/transactions_details.css'
 import '../styles/utilities.css'
+import * as nextImage from "next/image";
+
+const originalNextImage = nextImage.default;
+
+Object.defineProperty(nextImage, "default", {
+  configurable: true,
+  value: props => <OriginalNextImage {...props} unoptimized />
+})
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

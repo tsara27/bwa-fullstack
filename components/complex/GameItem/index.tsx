@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface GameItemProps {
-  thumbnail: string;
+export interface GameItemProps {
+  thumbnail: '/img/Thumbnail-1.png' | '/img/Thumbnail-2.png' | '/img/Thumbnail-3.png' | '/img/Thumbnail-4.png' | '/img/Thumbnail-5.png';
   gameTitle: string;
   gameDevice: string;
 }
@@ -15,11 +15,11 @@ function GameItem(props: GameItemProps) {
       <Link href="/details">
         <a>
           <div className="blur-sharp">
-            <img
+            <Image
               className="thumbnail"
-              src={`/img/${thumbnail}`}
-              width="205"
-              height="270"
+              src={thumbnail}
+              width={205}
+              height={270}
               alt=""
             />
           </div>
